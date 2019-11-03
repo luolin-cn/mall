@@ -14,6 +14,11 @@ spring:
       protocol: zookeeper
     # dubbo的服务的扫描路径
     base-package: com.lin.mall
+    consumer:
+      # 设置超时时间为600s
+      timeout: 600000
+      # 设置不检查生产者服务是否存在
+      check: false
 logging:
   level:
     com.lin: debug
